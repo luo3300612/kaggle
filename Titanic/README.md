@@ -7,13 +7,20 @@
 ![](./流程tu.png)
 ### Logistic Regression
 
+
 $X\in R^{m\times n}$，$m$是样本数量，$y\in R^{m\times1}$是$X$的标签，$h_{\theta}(X) = \frac{1}{1+e^{-X\theta}}$，$\lambda$是正则化参数
 ##### 损失函数
+<img src="http://latex.codecogs.com/gif.latex?J=-\frac{1}{m}[y^{T}log(h_{\theta}(X))+(1-y)^{T}log(1-log(h_{\theta}(X)))]+\frac{\lambda}{2m}\sum_{i=1}^{n}\theta_{i}^{2}" />
+
 $J = -\frac{1}{m}[y^{T}log(h_{\theta}(X))+(1-y)^{T}log(1-log(h_{\theta}(X)))]+\frac{\lambda}{2m}\sum_{i=1}^{n}\theta_{i}^{2}$
 ##### 梯度
+<img src="http://latex.codecogs.com/gif.latex?\frac{\partial J}{\partial \theta} = \frac{1}{m}X^{T}(h_{\theta}(X)-y)+\frac{\lambda}{m}\theta" />
+
 $\frac{\partial J}{\partial \theta} = \frac{1}{m}X^{T}(h_{\theta}(X)-y)+\frac{\lambda}{m}\theta$
 **注**:$\theta_{0}$没有正则化项
 ##### 迭代方法
+<img src="http://latex.codecogs.com/gif.latex?\theta = \theta - \alpha \frac{\partial J}{\partial \theta}" />
+
 $\theta = \theta - \alpha \frac{\partial J}{\partial \theta}$
 **注**:$\theta_{0}$没有正则化项
 
