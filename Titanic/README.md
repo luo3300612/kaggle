@@ -1,11 +1,17 @@
 ##  Titanic
 这是我的第一个Kaggle题目
-**模型**：Logistic Regression
-**Score**：0.76555
-**排名**：8209
-**流程**：
+#### 模型：Logistic Regression
+#### Score：0.76555
+#### 排名：8209
+#### 流程：
 ![](./流程tu.png)
 ### Logistic Regression
+<img src="http://latex.codecogs.com/gif.latex?\frac{\partial J}{\partial \theta_k^{(j)}}=\sum_{i:r(i,j)=1}{\big((\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\big)x_k^{(i)}}+\lambda \theta_k^{(j)}" />
+
+作者：Deep Reader
+链接：https://www.zhihu.com/question/26887527/answer/43166739
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 $X\in R^{m\times n}$，$m$是样本数量，$y\in R^{m\times1}$是$X$的标签，$h_{\theta}(X) = \frac{1}{1+e^{-X\theta}}$，$\lambda$是正则化参数
 ##### 损失函数
 $J = -\frac{1}{m}[y^{T}log(h_{\theta}(X))+(1-y)^{T}log(1-log(h_{\theta}(X)))]+\frac{\lambda}{2m}\sum_{i=1}^{n}\theta_{i}^{2}$
