@@ -27,6 +27,7 @@ $\theta = \theta - \alpha \frac{\partial J}{\partial \theta}$
 具体的过程见mysolution.ipynb文件
 其中的notebook.ipynb来自[这个链接](https://www.kaggle.com/jotham91/titanic-code-2-may-18/code)
 是我在完成自己的模型之后看到的别人的一个很好的实现，所以拷贝下来用以学习
+
 **总结**：
 * *pandas*中有很多较好的数据显示和预处理的函数，无需自己手动编写如
 ```
