@@ -1,5 +1,6 @@
 ##  Titanic
 这是我的第一个Kaggle题目
+ipynb不能在github上显示，代码在[点击我](http://nbviewer.jupyter.org/github/luo3300612/kaggle/blob/master/Titanic/mysolution.ipynb)
 #### 模型：Logistic Regression
 #### Score：0.76555
 #### 排名：8209
